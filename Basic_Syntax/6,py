@@ -1,0 +1,7 @@
+def Reverse(num , rev_n=0):
+    if num==0:
+        return rev_n
+
+    return ((Reverse(num//10,rev_n*10+num%10))) 
+
+print(Reverse(1234))   
